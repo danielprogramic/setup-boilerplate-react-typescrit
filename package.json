@@ -7,6 +7,7 @@
     "build": "npm run clean-dist && webpack --config=configs/webpack/prod.js",
     "clean-dist": "rimraf dist/*",
     "lint": "eslint './src/**/*.{js,ts,tsx}' --quiet",
+    "lint:fix": "eslint './src/**/*.{js,ts,tsx}' --fix",
     "start": "npm run start-dev",
     "start-dev": "webpack serve --config=configs/webpack/dev.js",
     "start-prod": "npm run build && node express.js",
